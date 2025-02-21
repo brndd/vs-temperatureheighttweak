@@ -9,8 +9,8 @@ public class ClimatePatch
 {
     // This is the simplified form of
     // a / (1 + exp(-b(x - c))) - a / (1 + exp(bc))
-    // where a = 189, b = 0.03, c = 150
-    // The values were adjusted arbitrarily until the curve had a nice shape and intersected the vanilla line at ~160 above sea level
+    // where a = 188, b = 0.03, c = 155
+    // The values were adjusted arbitrarily until the curve had a nice shape and intersected the vanilla line at ~170 above sea level
     public static double GetAltitudeFactor(int distToSealevel)
     {
         if (distToSealevel < 0)
