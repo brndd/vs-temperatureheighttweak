@@ -1,11 +1,11 @@
 {
     "type": "code",
     "modid": "temperatureheighttweak",
-    "name": "TemperatureHeightTweak",
+    "name": "Temperature Height Tweak",
     "authors": [
-        "Unknown"
+        "Burneddi"
     ],
-    "description": "To be added",
+    "description": "Makes temperature decrease with elevation non-linearly so that it's more gradual at low elevations.",
     "version": "1.0.0",
     "dependencies": {
         "game": ""
