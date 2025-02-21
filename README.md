@@ -4,6 +4,6 @@ blocks, then decreases steeply and then levels off again.
 
 The values are optimized for 320 world height.
 
-https://www.desmos.com/calculator/asoxcsg4t7
+https://www.desmos.com/calculator/tlizehxfmy
 
 ![a screenshot of the default temperature-elevation function (red decreasing line) and the modded function (green sigmoid curve). The functions intersect at approximately x=170.](screenshot.png)
