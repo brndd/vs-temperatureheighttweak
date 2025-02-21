@@ -6,7 +6,7 @@
         "Burneddi"
     ],
     "description": "Makes temperature decrease with elevation non-linearly so that it's more gradual at low elevations.",
-    "version": "1.0.0",
+    "version": "0.2.0",
     "dependencies": {
         "game": ""
     }
