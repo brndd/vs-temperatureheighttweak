@@ -7,6 +7,11 @@ namespace TemperatureHeightTweak;
 [HarmonyPatch]
 public class ClimatePatch
 {
+    public static double A { get; set; } = 188.0;
+    public static double B { get; set; } = 0.03;
+    public static double C { get; set; } = 155.0;
+    public static double Offset { get; set; } = 1.78;
+    
     // This is the simplified form of
     // a / (1 + exp(-b(x - c))) - a / (1 + exp(bc))
     // where a = 188, b = 0.03, c = 155
@@ -19,7 +24,7 @@ public class ClimatePatch
         }
         else
         {
-            return 188.0 / (1.0 + Math.Exp(-0.03 * (distToSealevel - 155.0))) - 1.78;
+            return A / (1.0 + Math.Exp(-B * (distToSealevel - C))) - Offset;
         }
     }
     
