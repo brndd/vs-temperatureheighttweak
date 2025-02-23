@@ -17,8 +17,7 @@ public class TemperatureHeightTweakModSystem : ModSystem
     {
         base.Start(api);
         Api = api;
-        api.Logger.Debug("Loaded temperature tweak!!!");
-
+        
         if (!Harmony.HasAnyPatches(Mod.Info.ModID))
         {
             _harmony = new Harmony(Mod.Info.ModID);
